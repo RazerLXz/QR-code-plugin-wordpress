@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias por su compra! | Multiparque</title>
+</head>
+
+<body>
+  <div style="display: flex; justify-content: center; width: 400px; padding-left: 200px; padding-right: 80px;">
+    <img src="https://multiparque.com/wp-content/uploads/2023/04/logoMultiparque.png" alt="logo"  width="100" style="display: block;">
+  </div>
+
+  <div style="font-family: 'Open Sans', Sans-serif; width: 400px; height: 70px; padding-left: 100px; padding-top: 40px;background-color: #1b8dfe; display: flex; justify-content: center; align-items: center; border-left: 1px solid #1b8dfe; border-right: 1px solid #1b8dfe; border-bottom: 1px solid #1b8dfe;">
+    <h1 style="margin: 0px;">Detalles</h1>
+  </div>
+  <div style="font-family: 'Open Sans', Sans-serif; width: 400px; padding-left: 50px; padding-right: 50px; padding-bottom: 50px; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;">
+    <br>
+    <p style="margin: 0px;">Gracias por tu compra {{name}}</p>
+    <br>
+    <table style="border-collapse: collapse; width: 400px;">
+      <tr style="height: 50px;">
+        <th style="font-weight: bold; font-family: 'Open Sans', Sans-serif; font-size: 16px; border: 1px solid #b2acac; text-align: left;">Fecha de compra:</th>
+        <td style="font-weight: normal; font-family: 'Open Sans', Sans-serif; font-size: 12px; border: 1px solid #b2acac;">{{fecha_compra}}</td>
+      </tr>
+      {{producto}}
+      <tr style="height: 50px;">
+        <th style="font-weight: bold; font-family: 'Open Sans', Sans-serif; font-size: 16px; border: 1px solid #b2acac; text-align: left;">Total:</th>
+        <td style="font-weight: normal; font-family: 'Open Sans', Sans-serif; font-size: 12px; border: 1px solid #b2acac;">{{monto}}</td>
+      </tr>
+      <tr style="height: 50px;">
+        <th style="font-weight: bold; font-family: 'Open Sans', Sans-serif; font-size: 16px; border: 1px solid #b2acac; text-align: left;">Método de pago:</th>
+        <td style="font-weight: normal; font-family: 'Open Sans', Sans-serif; font-size: 12px; border: 1px solid #b2acac;">{{metodo}}</td>
+      </tr>
+      <tr style="height: 50px;">
+        <th style="font-weight: bold; font-family: 'Open Sans', Sans-serif; font-size: 16px; border: 1px solid #b2acac; text-align: left;">Cantidad de QR generados:</th>
+        <td style="font-weight: normal; font-family: 'Open Sans', Sans-serif; font-size: 12px; border: 1px solid #b2acac;">{{quantity}}</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+
+</html>

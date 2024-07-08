@@ -1,0 +1,23 @@
+function display_modify_user_form($user_data) {
+    ?>
+    <div class="wrap">
+        <h1>Modificar Usuario</h1>
+        <form method="post" action="">
+            <!-- Campos para modificar los datos del usuario -->
+            <label for="first_name">Nombre:</label>
+            <input type="text" name="first_name" value="<?php echo esc_attr($user_data->first_name); ?>" required><br>
+
+            <label for="last_name">Apellido:</label>
+            <input type="text" name="last_name" value="<?php echo esc_attr($user_data->last_name); ?>" required><br>
+
+            <label for="email">Nombre de Usuario:</label>
+            <input type="text" name="username" value="<?php echo esc_attr($user_data->username); ?>" required><br>
+
+            <label for="password_hash">Contraseña:</label>
+            <input type="password" name="password" required><br>
+
+            <input type="submit" name="update_user" class="button button-primary" value="Actualizar Usuario">
+        </form>
+    </div>
+    <?php
+}

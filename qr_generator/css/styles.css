@@ -1,0 +1,35 @@
+#validation_results_table th,
+#validation_results_table td {
+    padding: 8px;
+}
+
+
+/* Agrega espacio en la parte superior de la tabla */
+#validation_results_table {
+    margin-top: 20px;
+}
+
+#clear_results, #validate_button {
+    
+    margin: 10px;
+    padding: 10px 20px; /* Ajusta estos valores según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+#search_button, #validate_button, #clear_results {
+    border-radius: 30px;
+    border-color: #262161;
+    color: white;
+    font-weight: bold;
+    background-color: #262161;
+}
+
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
